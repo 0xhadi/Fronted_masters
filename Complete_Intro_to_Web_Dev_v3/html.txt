@@ -1,0 +1,48 @@
+-- <tags> : building blog of Html, it has an opening and closing tag </tag>
+-- <h1>...<h6> Heading tags
+-- there are some selfclosing tags, void tags <img />
+-- <p> paragraph tag </p>
+-- <a href="google.com"> anchor tag, takes to google </a>
+-- <div> short for division </div>
+-- <span> Conatiner for small piece of text </span>
+-- <ol> <ul> <li> ordered, unordered lisst, and a list tags
+-- <button> </button>
+-- <img src="" alt="">
+-- <input />  // this is the default
+    -- <input type="text">
+    -- <input type="color">
+    -- <input type="file">
+    -- <input type="number">
+    -- <input type="datetime-local">
+    -- <input type="radio"> //one option
+    -- <input type="checkbox"> // multiple options
+-- <textarea> </textarea>
+-- <select> <option value="1">1</option> <option value="2">2</option> </select> //one option like radio button
+-- <form> <input > <input > <form>
+--<table>
+        <thead>
+            <tr> <td><alpha/td> <td><num/td> <tr>
+        </thead>
+        <tbody>
+            <tr> <td>A</td> <td>1</td> <tr>
+            <tr> <td>B</td> <td>2</td> <tr>
+        </tbody>
+    <table>
+--<marques> Old feature like ALJAZZERA</marques>
+-- <!-- this is a comment! -->--
+<br /> hard return
+
+--ATTRIBUTES alt src type ....
+--Class : you can have as many as you want
+--ID : you can only have one, you can use it with <a> tag
+ 
+<article> </article>
+<section> </section>
+<nav> <nav> // you can use list to its items
+
+<!DOCTYPE html> // what can of document
+<html lanh="en> // whcih language is this page
+<head> dosn't not dispaly to the user
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> MY page </title>

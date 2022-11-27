@@ -1,0 +1,74 @@
+A rule is building block of css.
+this is a rule:
+
+selector {
+	property : value; // there is about 350 property
+	property : value;
+	property : value;
+		.
+		.
+		.
+		.
+}
+h1 {
+	color : black;
+}
+-- color : red || #ff0000 || rgb(255, 0, 0) || hsl(0, 100%, 50%)
+// learn more about colors : https://css-tricks.com/nerds-guide-color-web/
+
+-- The CSS hsl function accepts 3 values: a number from 0 to 360 for hue, a percentage from 0 to 100 for saturation, and a percentage from 0 to 100 for lightness.
+
+If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees.
+
+Saturation is the intensity of a color from 0%, or gray, to 100% for pure color.
+
+Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral. 
+
+-- opacity: 0.5;
+
+-- font-size: 60px; // px present the unit of measurement, there is em, rem ... for more info : https://css-tricks.com/the-lengths-of-css/
+-- font-weight: normal;
+-- text-decoration: underline;
+-- text-align: right;
+-- list-style: upper-roman;
+-- list-style: square; // none; 
+-- background-color: black;
+-- text-transform: uppercase; // be careful with this since if your website supports other languages, changing the cases of letters will modify the meaning.
+-- border-radius: 30px;
+-- border: 3px solid pink;
+-- NOTE: Why is it font-* sometimes and text-* other times? Font has to do with the acutal font being loaded. An italics font is actually different glyphs as in as a bolded font. Text has to do with the text being the text displayed, like uppercase or a line underneath. It doesn't need to change the actual font being loaded.
+
+-- Parent (ancestor) tag in CSS affects children, it cascading down to the child.
+
+-- You can put your css inside your html using style tag <style>, don't do that in the project, this is just for testing
+
+-- Specifity in css : tag, class, ID, inline style,  !important// color: red !important;
+-- When using frameworks with css, always load your css last.
+
+-- Pseudo-classes":": change how elements look based on certain events that happen in the DOM, or change just the nth child .... Read this article: https://css-tricks.com/pseudo-class-selectors/
+(hover should not be a core funtionality cause it does not work on mobile)
+
+----  In web dev, you audience are the most important
+
+-- Pseudoelements"::": hey are a bit of an advance concept. read this article : https://css-tricks.com/almanac/selectors/a/after-and-before/
+
+
+			BOX MODEL
+
+-- Display: Every tag in CSS has a display property associated with it by default. In fact, CSS has a lot of hidden defaults, just like by-default all text's color is black. With display, it varies by what type of tag we're talking about. divs are display: block; by default while spans are display: inline; we can manipulate a span to act like a div and vice-versa.
+-- display takes many values:
+	- inline: it makes whatever the tag is behave like text.
+	-- block:  This give you control over the height, width, padding, margins, etc. of something. By default, something that is block takes the whole line to itself.
+	-- inline-block:  A hybrid of the previous two. This will make browser try to place the tag inline, but will still allow you to control the height, width, padding, and margins.
+	-- flex and inline-flex: Similar to block in that it affects the tags around it like block does, however it gains some new super power on how its interior tags are layed out.
+	-- grid and inline-grid :  More advance display mode that allow you more power to layout tags inside of them.
+	-- table : Make something act like a table. In general, use the <table></table> tag instead of using CSS to make things act like tables.
+
+Warning : Height, Width, Padding, Border, and Margin, these properties cannot be manipulated if something is display: inline. Be careful of that.
+
+-- box-sizing: put this line in every css project
+* {
+	box-sizing: border-box
+}
+
+-- caniuse.com : this is good to check if a property is supported in the web or not
